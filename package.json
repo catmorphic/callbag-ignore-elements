@@ -1,0 +1,34 @@
+{
+  "name": "callbag-ignore-elements",
+  "version": "0.1.0",
+  "description": "A callbag operator that ignores all data and only responds to start or complete messages",
+  "main": "./lib",
+  "scripts": {
+    "build": "babel index.js --out-dir lib  --presets @babel/preset-env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catmorphic/callbag-ignore-elements.git"
+  },
+  "author": "Levi Wong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/catmorphic/callbag-ignore-elements/issues"
+  },
+  "homepage": "https://github.com/catmorphic/callbag-ignore-elements#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/node": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/register": "^7.0.0-beta.42",
+    "esm": "^3.0.14"
+  },
+  "ava": {
+    "require": [
+      "@babel/register",
+      "esm"
+    ]
+  }
+}
